@@ -1,3 +1,5 @@
+package v1;
+
 import java.util.*;
 
 public class SampleDatabase implements Database {
@@ -91,6 +93,31 @@ public class SampleDatabase implements Database {
     public Database sortBy(int colIndex, boolean ase) {
 
         throw new RuntimeException("not impl sortBy");
+    }
+
+    @Override
+    public Database count(int colIndex) {
+        throw new RuntimeException("not impl ");
+    }
+
+    @Override
+    public Database countDistinct(int... colIndexList) {
+        throw new RuntimeException("not impl ");
+    }
+
+    @Override
+    public Database groupByCount(int colIndex, int countColIndex) {
+        throw new RuntimeException("not impl ");
+    }
+
+    @Override
+    public Database groupByCountDistinct(int colIndex, int... countColIndexList) {
+        throw new RuntimeException("not impl ");
+    }
+
+    @Override
+    public Database join(Database other, int onEqualIndexLeft, int onEqualIndexRight) {
+        throw new RuntimeException("not impl ");
     }
 
 
